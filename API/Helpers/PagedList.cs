@@ -10,10 +10,10 @@ namespace API.Helpers
     {
         public PagedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)
         {
-            this.CurrentPage = pageNumber;
-            this.TotalPages = (int) Math.Ceiling(count/ (double) pageSize);
-            this.PageSize = pageSize;
-            this.TotalCount = count;
+            CurrentPage = pageNumber;
+            TotalPages = (int) Math.Ceiling(count / (double) pageSize);
+            PageSize = pageSize;
+            TotalCount = count;
             AddRange(items);
 
         }
